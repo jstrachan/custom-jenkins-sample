@@ -1,0 +1,17 @@
+Step: build-step-credential-initializer-ppwrk:
+
+{"level":"warn","ts":1551356742.8502026,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1551356742.8521874,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-jstrachan-custom-jenkins-sample-master-45:
+
+{"level":"warn","ts":1551356745.1853423,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1551356746.2100146,"logger":"fallback-logger","caller":"git-init/main.go:90","msg":"Successfully cloned \"https://github.com/jstrachan/custom-jenkins-sample\" @ \"master\" in path \"/workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-setup-jx-git-credentials:
+
+Generated Git credentials file /home/jenkins/git/credentials
+Step: build-step-build-build:
+
+error: secrets "jenkins" not found
+{"component":"entrypoint","error":"wrapped process failed: exit status 1","level":"error","msg":"Error executing test process","time":"2019-02-28T12:25:51Z"}
