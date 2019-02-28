@@ -1,17 +1,27 @@
 pipeline {
   agent {
-    label "default"
+    kubernetes {
+      //cloud 'kubernetes'
+      label 'mypod'
+      yaml """
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+  - name: maven
+    image: maven:3.3.9-jdk-8-alpine
+    command: ['cat']
+    tty: true
+"""
+    }
   }
   stages {
-   stage('Preparation') {
-     steps {
-        sh "echo Preparation"
-      }
-   }
-   stage('Build') {
+    stage('Run maven') {
       steps {
-        sh "echo Build"
+        container('maven') {
+          sh 'mvn -version'
+        }
       }
     }
   }
- }
+}
