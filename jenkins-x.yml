@@ -1,1 +1,2 @@
 buildPack: custom-jenkins
+noReleasePrepare: true
