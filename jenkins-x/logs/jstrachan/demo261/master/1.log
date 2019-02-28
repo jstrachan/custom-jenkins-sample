@@ -1,0 +1,236 @@
+Step: build-step-credential-initializer-lh66x:
+
+{"level":"warn","ts":1551374465.582727,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1551374465.5832858,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-jstrachan-demo261-master-8sc7q:
+
+{"level":"warn","ts":1551374468.2587135,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1551374469.5067096,"logger":"fallback-logger","caller":"git-init/main.go:90","msg":"Successfully cloned \"https://github.com/jstrachan/demo261\" @ \"v0.0.1\" in path \"/workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-setup-jx-git-credentials:
+
+Generated Git credentials file /home/jenkins/git/credentials
+Step: build-step-build-mvn-deploy:
+
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective settings
+[WARNING] 'servers.server.id' must be unique but found duplicate server with id nexus @ /root/.m2/settings.xml
+[WARNING] 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:demo261 >-------------------------
+[INFO] Building demo 0.0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ demo261 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ demo261 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ demo261 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/source/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ demo261 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/source/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ demo261 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/source/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ demo261 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.demo261.DemoApplicationTests
+17:22:28.256 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.demo261.DemoApplicationTests]
+17:22:28.266 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:22:28.284 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:22:28.314 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.demo261.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:22:28.336 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo261.DemoApplicationTests], using SpringBootContextLoader
+17:22:28.350 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo261.DemoApplicationTests]: class path resource [com/example/demo261/DemoApplicationTests-context.xml] does not exist
+17:22:28.353 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo261.DemoApplicationTests]: class path resource [com/example/demo261/DemoApplicationTestsContext.groovy] does not exist
+17:22:28.357 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo261.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:22:28.364 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo261.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:22:28.463 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.demo261.DemoApplicationTests]
+17:22:28.626 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/example/demo261/DemoApplication.class]
+17:22:28.631 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo261.DemoApplication for test class com.example.demo261.DemoApplicationTests
+17:22:28.788 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.demo261.DemoApplicationTests]: using defaults.
+17:22:28.790 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:22:28.820 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+17:22:28.825 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+17:22:28.828 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4fa1c212, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ea2bc93, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3116c353, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@f627d13, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e928fbf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@352ff4da, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3224a577, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2e32ccc5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@748741cb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3e44f2a5]
+17:22:28.836 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo261.DemoApplicationTests]
+17:22:28.838 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo261.DemoApplicationTests]
+17:22:28.841 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo261.DemoApplicationTests]
+17:22:28.842 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo261.DemoApplicationTests]
+17:22:28.845 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo261.DemoApplicationTests]
+17:22:28.846 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo261.DemoApplicationTests]
+17:22:28.867 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@766653e6 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4e07b95f testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.demo261.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@8c3b9d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7ee8290b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6f45df59, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2118cddf], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+17:22:28.875 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo261.DemoApplicationTests]
+17:22:28.876 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo261.DemoApplicationTests]
+17:22:28.946 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-02-28 17:22:29.888  INFO 72 --- [           main] c.example.demo261.DemoApplicationTests   : Starting DemoApplicationTests on jstrachan-demo261-master-1-build-qltsd-pod-f339cf with PID 72 (started by root in /workspace/source)
+2019-02-28 17:22:29.895  INFO 72 --- [           main] c.example.demo261.DemoApplicationTests   : No active profile set, falling back to default profiles: default
+2019-02-28 17:22:35.532  INFO 72 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-28 17:22:37.033  INFO 72 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-28 17:22:37.178  INFO 72 --- [           main] c.example.demo261.DemoApplicationTests   : Started DemoApplicationTests in 8.219 seconds (JVM running for 9.981)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.942 s - in com.example.demo261.DemoApplicationTests
+2019-02-28 17:22:37.803  INFO 72 --- [       Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.1:jar (default-jar) @ demo261 ---
+[INFO] Building jar: /workspace/source/target/demo261-0.0.1.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.3.RELEASE:repackage (repackage) @ demo261 ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ demo261 ---
+[INFO] Installing /workspace/source/target/demo261-0.0.1.jar to /root/.mvnrepository/com/example/demo261/0.0.1/demo261-0.0.1.jar
+[INFO] Installing /workspace/source/pom.xml to /root/.mvnrepository/com/example/demo261/0.0.1/demo261-0.0.1.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ demo261 ---
+[INFO] Using alternate deployment repository nexus::default::http://nexus/repository/maven-releases/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:13 min
+[INFO] Finished at: 2019-02-28T17:22:52Z
+[INFO] ------------------------------------------------------------------------
+Step: build-step-build-skaffold-version:
+
+v0.21.1
+Step: build-step-build-container-build:
+
+time="2019-02-28T17:22:56Z" level=warning msg="config version (skaffold/v1beta2) out of date: upgrading to latest (skaffold/v1beta3)"
+Starting build...
+Building [changeme]...
+Sending build context to Docker daemon  528.4kBSending build context to Docker daemon  11.11MBSending build context to Docker daemon  18.24MB
+Step 1/9 : FROM openjdk:8-jdk-slim
+8-jdk-slim: Pulling from library/openjdk
+6ae821421a7d: Pulling fs layer
+187061ad2a29: Pulling fs layer
+8f37e25a28fc: Pulling fs layer
+211d5433339d: Pulling fs layer
+cd634dd09a99: Pulling fs layer
+211d5433339d: Waiting
+cd634dd09a99: Waiting
+8f37e25a28fc: Verifying Checksum
+8f37e25a28fc: Download complete
+187061ad2a29: Verifying Checksum
+187061ad2a29: Download complete
+6ae821421a7d: Verifying Checksum
+6ae821421a7d: Download complete
+211d5433339d: Verifying Checksum
+211d5433339d: Download complete
+cd634dd09a99: Verifying Checksum
+cd634dd09a99: Download complete
+6ae821421a7d: Pull complete
+187061ad2a29: Pull complete
+8f37e25a28fc: Pull complete
+211d5433339d: Pull complete
+cd634dd09a99: Pull complete
+Digest: sha256:bdbd79bba6461c74a0d800d6af2517ac077b5c2c4f8494e84815a485a02ba5d0
+Status: Downloaded newer image for openjdk:8-jdk-slim
+ ---> f07659799003
+Step 2/9 : ENV PORT 8080
+ ---> Running in cf207924c7c7
+ ---> 00a703e328f3
+Step 3/9 : ENV CLASSPATH /opt/lib
+ ---> Running in 15df3807f7c2
+ ---> deed2c1e784e
+Step 4/9 : ENV CHEESE Edam2
+ ---> Running in b0c61dd73be8
+ ---> 18e3496d9a24
+Step 5/9 : EXPOSE 8080
+ ---> Running in 07e5c1b6814b
+ ---> 2e8890727caf
+Step 6/9 : COPY pom.xml target/lib* /opt/lib/
+ ---> 3f567ecf78f5
+Step 7/9 : COPY target/*.jar /opt/app.jar
+ ---> 7ea2f8343372
+Step 8/9 : WORKDIR /opt
+ ---> b53e19870add
+Step 9/9 : CMD java -jar app.jar
+ ---> Running in 11e5d2d1e087
+ ---> bd52966c5832
+Successfully built bd52966c5832
+The push refers to a repository [10.59.240.97:5000/jstrachan/demo261]
+3f5d11914cf7: Preparing
+6b637ef37f73: Preparing
+91606f8097e4: Preparing
+a7df0d164845: Preparing
+87374d568e1e: Preparing
+85b294f018d5: Preparing
+0a07e81f5da3: Preparing
+85b294f018d5: Waiting
+0a07e81f5da3: Waiting
+87374d568e1e: Pushed
+6b637ef37f73: Pushed
+a7df0d164845: Pushed
+85b294f018d5: Pushed
+3f5d11914cf7: Pushed
+0a07e81f5da3: Pushed
+91606f8097e4: Pushed
+0.0.1: digest: sha256:67db245863541ad11c305184c76c54d2f6ae35735e3e61b7fe9802956f7025c0 size: 1784
+Build complete in 30.933984844s
+Starting test...
+Test complete in 10.769µs
+changeme -> 10.59.240.97:5000/jstrachan/demo261:0.0.1
+There is a new version (0.23.0) of skaffold available. Download it at https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64
+
+Step: build-step-build-post-build:
+
+no CVE provider running in the current jx namespace so skip adding image to be analysed
+Step: build-step-promote-changelog:
+
+Converted /workspace/source/charts/demo261 to an unshallow repository
+Generating change log from git ref 6ebe2102f3376e02a6e52fb1d4d778bf52415de8 => 457a5e15d94992060372f09ee3552592b2c9438f
+Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
+Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
+Finding issues in commit messages using git format
+No release found for jstrachan/demo261 and tag v0.0.1 so creating a new release
+Updated the release information at https://github.com/jstrachan/demo261/releases/tag/v0.0.1
+generated: /workspace/source/charts/demo261/templates/release.yaml
+Created Release demo261-0-0-1 resource in namespace jx
+Updating PipelineActivity jstrachan-demo261-master-1 with version 0.0.1
+Updated PipelineActivities jstrachan-demo261-master-1 with release notes URL: https://github.com/jstrachan/demo261/releases/tag/v0.0.1
+Step: build-step-promote-helm-release:
+
+No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: jenkins-x http://chartmuseum.jenkins-x.io
+Successfully added Helm repository jenkins-x.
+Adding missing Helm repo: releases http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository releases.
+No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file demo261-0.0.1.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+Step: build-step-promote-jx-promote:
+
+prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/jx/issues/2410
+Promoting app demo261 version 0.0.1 to namespace jx-staging
+Created Pull Request: https://github.com/jstrachan/environment-jstrachan-t2-staging/pull/1
+
+Failed to query the Pull Request last commit status for https://github.com/jstrachan/environment-jstrachan-t2-staging/pull/1 ref 608d33e740d760b59592ffa312a37a5e153fb580 Could not find a status for repository jstrachan/environment-jstrachan-t2-staging with ref 608d33e740d760b59592ffa312a37a5e153fb580
+Pull Request https://github.com/jstrachan/environment-jstrachan-t2-staging/pull/1 is merged at sha e67cbd0b663e2f9af7c8ff58c17ddcc08478caf6
+Pull Request merged but we are not waiting for the update pipeline to complete!
+Could not find the service URL in namespace jx-staging for names demo261, jx-demo261, jx-staging-demo261
