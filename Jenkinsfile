@@ -20,6 +20,7 @@ spec:
       steps {
         container('maven') {
           sh 'mvn -version'
+          sh 'hello '
         }
       }
     }
