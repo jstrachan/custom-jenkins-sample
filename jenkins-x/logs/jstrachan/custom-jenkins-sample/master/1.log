@@ -1,17 +1,28 @@
-Step: build-step-credential-initializer-j5dp6:
 
-{"level":"warn","ts":1551364880.3909929,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1551364880.3941877,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
-Step: build-step-git-source-jstrachan-custom-jenkins-sample-master-x7:
+Showing logs for build [32mjstrachan-custom-jenkins-sample-r7d5p-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-bfxxc[0m
+{"level":"warn","ts":1581173704.6215084,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581173704.622186,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-{"level":"warn","ts":1551364883.0089822,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1551364884.0741293,"logger":"fallback-logger","caller":"git-init/main.go:90","msg":"Successfully cloned \"https://github.com/jstrachan/custom-jenkins-sample\" @ \"master\" in path \"/workspace/source\""}
-Step: build-step-place-tools:
+Showing logs for build [32mjstrachan-custom-jenkins-sample-r7d5p-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-nkgxh[0m
+{"level":"warn","ts":1581173705.9437497,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1581173705.9458127,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Step: build-step-setup-jx-git-credentials:
+Showing logs for build [32mjstrachan-custom-jenkins-sample-r7d5p-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Generated Git credentials file /home/jenkins/git/credentials
-Step: build-step-build-build:
+Showing logs for build [32mjstrachan-custom-jenkins-sample-r7d5p-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-r7d5p-nb2st[0m
+{"level":"warn","ts":1581173710.0557353,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581173711.0518918,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample.git @ v0.0.1 in path /workspace/source"}
 
-error: secrets "jenkins" not found
-{"component":"entrypoint","error":"wrapped process failed: exit status 1","level":"error","msg":"Error executing test process","time":"2019-02-28T14:41:30Z"}
+Showing logs for build [32mjstrachan-custom-jenkins-sample-r7d5p-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:7b10e03388621b967d08c9385bc98c83439ef6aa
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-r7d5p-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-r7d5p-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-build[0m
+error: No Jenkins App services found in namespace ** with selector jenkins.io/kind=jenkins
+Are you sure you installed a Jenkins App in this namespace?
+Try ** add app **-app-jenkins
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-build'. The execution of the pipeline has stopped.[0m
