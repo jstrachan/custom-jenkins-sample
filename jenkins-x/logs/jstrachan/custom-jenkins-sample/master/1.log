@@ -1,23 +1,27 @@
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-rh9sz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-lflnt[0m
-{"level":"warn","ts":1581575496.1877866,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1581575496.1887062,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-jpfm2-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-2nq7x[0m
+{"level":"warn","ts":1581582798.62718,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581582798.6279666,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-rh9sz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-2h869[0m
-{"level":"warn","ts":1581575496.710061,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1581575496.7118213,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-jpfm2-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-pzm5z[0m
+{"level":"warn","ts":1581582798.9890413,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1581582798.9902143,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-rh9sz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-jpfm2-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-rh9sz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-rh9sz-8ws47[0m
-{"level":"warn","ts":1581575521.754488,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1581575523.0764892,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample @ v0.0.2 in path /workspace/source"}
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-jpfm2-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jstrachan-custom-jenkins-s-jpfm2-wrspd[0m
+{"level":"warn","ts":1581582805.0713327,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581582806.0764039,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample.git @ 794188a3679f46c38fff9315bb31e3e2e29cbc43 in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-rh9sz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-jpfm2-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:794188a3679f46c38fff9315bb31e3e2e29cbc43
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-rh9sz-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
-/bin/sh: 1: **: not found
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-jpfm2-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
+
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-jpfm2-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Cloning the Jenkins X versions repo https://github.com/*********/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+error: failed to create effective pipeline for pull request: validation failed for Pipeline: expected exactly one, got neither: stages[0].parallel, stages[0].stages, stages[0].steps
 [31m
-Pipeline failed on stage 'from-build-pack' : container 'step-setup-jx-git-credentials'. The execution of the pipeline has stopped.[0m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-effective-pipeline'. The execution of the pipeline has stopped.[0m
