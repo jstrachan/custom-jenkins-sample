@@ -1,0 +1,27 @@
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-895wq-9[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-p29z2[0m
+{"level":"warn","ts":1581616779.5578828,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581616779.5584695,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-895wq-9[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-6zprs[0m
+{"level":"warn","ts":1581616780.5459752,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1581616780.5488763,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-895wq-9[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-895wq-9[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-895wq-lbrbw[0m
+{"level":"warn","ts":1581616786.6642041,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581616787.7217586,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample.git @ v0.0.13 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-895wq-9[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:5caa70d749e00354c0db2d6f0d9197a5ead0d43d
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-895wq-9[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-895wq-9[0m stage [32mfrom-build-pack[0m and container [32mstep-build-build[0m
+defaulting to Jenkins server ****************-http-server2 due to $TRIGGER_JENKINS_SERVER
+error: getting ingress for service "****************-http-server2" in namespace **: ingresses.extensions "****************-http-server2" not found
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-build'. The execution of the pipeline has stopped.[0m
