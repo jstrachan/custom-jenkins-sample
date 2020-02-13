@@ -1,27 +1,27 @@
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-k2lpc-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-g98cn[0m
-{"level":"warn","ts":1581576400.3857841,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1581576400.3868406,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-custom-jenkins-sample-x4jb9-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-clbz2[0m
+{"level":"warn","ts":1581586100.9371028,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581586100.9377296,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-k2lpc-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-64s9p[0m
-{"level":"warn","ts":1581576400.8460317,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1581576400.8472366,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-custom-jenkins-sample-x4jb9-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-ztjn2[0m
+{"level":"warn","ts":1581586101.8380175,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1581586101.8392045,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-k2lpc-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-custom-jenkins-sample-x4jb9-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-k2lpc-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-k2lpc-qqpvf[0m
-{"level":"warn","ts":1581576430.8315027,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1581576431.8275363,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample @ v0.0.4 in path /workspace/source"}
+Showing logs for build [32mjstrachan-custom-jenkins-sample-x4jb9-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-x4jb9-chzq2[0m
+{"level":"warn","ts":1581586123.9462743,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581586124.960748,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample.git @ v0.0.6 in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-k2lpc-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:
+Showing logs for build [32mjstrachan-custom-jenkins-sample-x4jb9-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:cd88f7ee6ae2921df279eb278ac17560b81aad43
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-k2lpc-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mjstrachan-custom-jenkins-sample-x4jb9-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /builder/home/git/credentials
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-k2lpc-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-run[0m
-2020-02-13 06:47:23.359+0000 [id=1]	WARNING	j.branch.WorkspaceLocatorImpl#getWorkspaceRoot: JENKINS-2111 path sanitization ineffective when using legacy Workspace Root Directory ‘/workspace/build’; switch to ‘${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}’ as in JENKINS-8446 / JENKINS-21942
+Showing logs for build [32mjstrachan-custom-jenkins-sample-x4jb9-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-run[0m
+2020-02-13 09:28:56.413+0000 [id=1]	WARNING	j.branch.WorkspaceLocatorImpl#getWorkspaceRoot: JENKINS-2111 path sanitization ineffective when using legacy Workspace Root Directory ‘/workspace/build’; switch to ‘${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}’ as in JENKINS-8446 / JENKINS-21942
 Started
 Running in Durability level: PERFORMANCE_OPTIMIZED
 org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
