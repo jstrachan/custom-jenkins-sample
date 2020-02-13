@@ -1,0 +1,32 @@
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-bdl8z-10[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-jdrml[0m
+{"level":"warn","ts":1581617524.1994534,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581617524.2000995,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-bdl8z-10[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-z4wgx[0m
+{"level":"warn","ts":1581617525.1778972,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1581617525.1790788,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-bdl8z-10[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-bdl8z-10[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-bdl8z-b2x4l[0m
+{"level":"warn","ts":1581617537.2721887,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581617538.3612566,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample.git @ v0.0.14 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-bdl8z-10[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-bdl8z-10[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-bdl8z-10[0m stage [32mfrom-build-pack[0m and container [32mstep-build-build[0m
+defaulting to Jenkins server ****************-http-server2 due to $TRIGGER_JENKINS_SERVER
+using Jenkins server http://****************-http-server2
+WARNING: 
+retrying after error:failed to create the ********* folder at http://****************-http-server2/********* in Jenkins: Get http://****************-http-server2/api/json/api/json?tree=useCrumbs: dial tcp 10.23.250.237:80: i/o timeout
+WARNING: 
+retrying after error:failed to create the ********* folder at http://****************-http-server2/********* in Jenkins: Get http://****************-http-server2/api/json/api/json?tree=useCrumbs: dial tcp 10.23.250.237:80: i/o timeout
+error: after 3 attempts, last error: failed to create the ********* folder at http://****************-http-server2/********* in Jenkins: Get http://****************-http-server2/api/json/api/json?tree=useCrumbs: dial tcp 10.23.250.237:80: i/o timeout
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-build'. The execution of the pipeline has stopped.[0m
