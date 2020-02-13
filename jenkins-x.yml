@@ -1,5 +1,1 @@
 buildPack: jenkinsfilerunner
-pipelineConfig:
-  agent:
-    image: jenkins4eval/jenkinsfile-runner
-  pipelines: {}
