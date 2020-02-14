@@ -1,6 +1,0 @@
-buildPack: trigger-jenkins
-pipelineConfig:
-  env:
-  - name: TRIGGER_JENKINS_SERVER
-    value: jenkins-operator-http-server2
-  pipelines: {}
