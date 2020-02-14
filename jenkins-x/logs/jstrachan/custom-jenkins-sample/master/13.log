@@ -1,0 +1,27 @@
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-cqszp-13[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-jwmqk[0m
+{"level":"warn","ts":1581662889.1575384,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581662889.1579285,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-cqszp-13[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-d9n7m[0m
+{"level":"warn","ts":1581662890.1957262,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1581662890.197192,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-cqszp-13[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-cqszp-13[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-cqszp-xpvnh[0m
+{"level":"warn","ts":1581662895.2755425,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581662896.3432536,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample.git @ v0.0.17 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-cqszp-13[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-cqszp-13[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-cqszp-13[0m stage [32mfrom-build-pack[0m and container [32mstep-build-build[0m
+defaulting to Jenkins server ****************-http-server2 due to $TRIGGER_JENKINS_SERVER
+using Jenkins server http://****************-http-server2:8080
+Using git URL https://github.com/*********/custom-jenkins-sample.git and branch master
+triggering pipeline job *********/custom-jenkins-sample/master
