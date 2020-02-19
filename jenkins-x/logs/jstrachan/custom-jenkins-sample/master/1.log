@@ -1,26 +1,30 @@
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-hbcsh-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-z6zcr[0m
-{"level":"warn","ts":1581678740.0489018,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1581678740.0494797,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-custom-jenkins-sample-6v5j6-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-lkbsf[0m
+{"level":"warn","ts":1582098314.2336323,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1582098314.234405,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-hbcsh-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-7twfc[0m
-{"level":"warn","ts":1581678740.9900851,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1581678740.9920003,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-custom-jenkins-sample-6v5j6-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-sxnzt[0m
+{"level":"warn","ts":1582098315.2520695,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1582098315.2534466,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-hbcsh-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-custom-jenkins-sample-6v5j6-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-hbcsh-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-hbcsh-w2gzp[0m
-{"level":"warn","ts":1581678745.0576952,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1581678746.1143572,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample.git @ v0.0.20 in path /workspace/source"}
+Showing logs for build [32mjstrachan-custom-jenkins-sample-6v5j6-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-6v5j6-45vdd[0m
+{"level":"warn","ts":1582098394.416733,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1582098395.5008543,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample.git @ v0.0.21 in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-hbcsh-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:6c61abd7f905733cf55d466d27e893bb7ecfaded
+Showing logs for build [32mjstrachan-custom-jenkins-sample-6v5j6-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-hbcsh-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mjstrachan-custom-jenkins-sample-6v5j6-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+failed to get helm version: failed to run 'helm version --short' command in directory '', output: 'Client: v2.14.3+g0e7f3b6
+Error: could not find tiller'
+old helm binary on the PATH so replacing with helm 3
+Cloning the Jenkins X versions repo https://github.com/*********/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-hbcsh-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-build[0m
+Showing logs for build [32mjstrachan-custom-jenkins-sample-6v5j6-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-build[0m
 error: No Jenkins App services found in namespace ** with selector jenkins.io/kind=jenkins
 Are you sure you installed a Jenkins App in this namespace?
 Try ** add app **-app-jenkins
