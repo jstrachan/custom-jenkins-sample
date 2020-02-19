@@ -1,52 +1,27 @@
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-c49zf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-2r47h[0m
-{"level":"warn","ts":1581613939.6655765,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1581613939.6665282,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-fmnz4-2[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-g622c[0m
+{"level":"warn","ts":1582098344.2645857,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1582098344.2672114,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-c49zf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-r2mwp[0m
-{"level":"warn","ts":1581613940.664563,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1581613940.665512,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-fmnz4-2[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-zv8zj[0m
+{"level":"warn","ts":1582098345.1862543,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1582098345.1875346,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-c49zf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-fmnz4-2[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-c49zf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-c49zf-k5nc2[0m
-{"level":"warn","ts":1581613951.774204,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1581613952.7929804,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample.git @ v0.0.7 in path /workspace/source"}
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-fmnz4-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jstrachan-custom-jenkins-s-fmnz4-mp9jh[0m
+{"level":"warn","ts":1582098350.6478355,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1582098351.7791417,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample.git @ 515235b11d7bfa8eed635d246293bdc3a963df3d in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-c49zf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-fmnz4-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:515235b11d7bfa8eed635d246293bdc3a963df3d
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-c49zf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
-Generated Git credentials file /builder/home/git/credentials
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-fmnz4-2[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
 
-Showing logs for build [32mjstrachan-custom-jenkins-sample-c49zf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-run[0m
-2020-02-13 17:12:44.292+0000 [id=1]	WARNING	j.branch.WorkspaceLocatorImpl#getWorkspaceRoot: JENKINS-2111 path sanitization ineffective when using legacy Workspace Root Directory ‘/workspace/build’; switch to ‘${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}’ as in JENKINS-8446 / JENKINS-21942
-Started
-Running in Durability level: PERFORMANCE_OPTIMIZED
-org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-WorkflowScript: 3: Invalid agent type "kubernetes" specified. Must be one of [any, docker, dockerfile, label, none] @ line 3, column 5.
-       kubernetes {
-       ^
-
-1 error
-
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:310)
-	at org.codehaus.groovy.control.CompilationUnit.applyToPrimaryClassNodes(CompilationUnit.java:1085)
-	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:603)
-	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:581)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:558)
-	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:298)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:268)
-	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:688)
-	at groovy.lang.GroovyShell.parse(GroovyShell.java:700)
-	at org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.doParse(CpsGroovyShell.java:142)
-	at org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.reparse(CpsGroovyShell.java:127)
-	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.parseScript(CpsFlowExecution.java:561)
-	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.start(CpsFlowExecution.java:522)
-	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:327)
-	at hudson.model.ResourceController.execute(ResourceController.java:97)
-	at hudson.model.Executor.run(Executor.java:429)
-Finished: FAILURE
+Showing logs for build [32mmeta-jstrachan-custom-jenkins-s-fmnz4-2[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Cloning the Jenkins X versions repo https://github.com/*********/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+error: no build pack for jenkinsfilerunner exists at directory /builder/home/.**/draft/packs/github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/packs/jenkinsfilerunner
 [31m
-Pipeline failed on stage 'from-build-pack' : container 'step-build-run'. The execution of the pipeline has stopped.[0m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-effective-pipeline'. The execution of the pipeline has stopped.[0m
